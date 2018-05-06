@@ -11,6 +11,7 @@ describe 'Artist Methods' do
 
   describe '#get_genre_of_first_song' do
     it 'returns the genre of the artists first saved song' do
+      # binding.pry
       expect(@prince.get_genre_of_first_song).to be_a(Genre)
       expect(@prince.get_genre_of_first_song.name).to eq("Soul")
     end
